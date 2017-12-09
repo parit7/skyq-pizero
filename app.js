@@ -32,14 +32,14 @@ app.get('/*', (request, response) => {
     }
     else if (path == 'on')
     {
-        var RemoteControl = new SkyRemote('192.168.1.161', 5900);
+        var RemoteControl = new SkyRemote('192.168.1.161', 49160);
         RemoteControl.press('power');
         response.send(path);
         setTimeout(backuptimer, 6000)
     }
     else
     {
-        var RemoteControl = new SkyRemote('192.168.1.161', 5900);
+        var RemoteControl = new SkyRemote('192.168.1.161', 49160);
         RemoteControl.press(path);
         response.send(path);
     }
