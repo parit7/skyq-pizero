@@ -54,6 +54,6 @@ app.get('/*', (request, response) => {
   })
 
   function backuptimer() {
-    var RemoteControl = new SkyRemote('192.168.1.161', 5900);
+    var RemoteControl = new SkyRemote('192.168.1.161', 49160);
     RemoteControl.press('backup');
   }
